@@ -18,13 +18,18 @@ efficiently while leveraging the temporal modeling capability of LSTMs.
 
 ## Improvements introduced from the old model:
 
-Max sequence length was changed 10 -¿ 20 to better capture the semantics of longer sentences.
-The tensorflow framework was switched to Pytorch’s NN.Module to define the architecture properly.
-Modified vocabulary and pre-trained word embeddings size for the dataset. Split training into training
-and validation set and added early stopping to prevent overfitting. The learning rate changed to 0.0005
-from 0.001. Modified dropout rate to 0.5 Trained for 50 epochs.
+1. Max sequence length was changed from 10 to 20 to better capture the semantics of longer sentences.
+2. The tensorflow framework was switched to Pytorch’s NN.Module to define the architecture properly.
+3. Modified vocabulary and pre-trained word embeddings size for the dataset.
+4. Split training into training and validation set and added early stopping to prevent overfitting.
+5. The learning rate changed to 0.0005 from 0.001.
+6. Modified dropout rate to 0.5 Trained for 50 epochs.
 
 ## Results:
 
 Test Accuracy: 54.08%
 Train Accuracy: 55.12%
+
+## References:
+
+1. [Book-Genre-Classification by Akshay Bhatia](mailto:https://github.com/akshaybhatia10/Book-Genre-Classification/tree/master)
